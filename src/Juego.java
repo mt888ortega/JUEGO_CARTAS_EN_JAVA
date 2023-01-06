@@ -2,8 +2,8 @@
 para hacer los distintos procesos que necesita el juego para
 funcionar.*/
 import java.util.Random;
-public class Juego implements LogicaJuego{
-
+public class Juego implements LogicaJuego
+{
     //Variable en la cual esta el numero de jugadores de esta partida.
 	int jugadores=0;
 	//Arreglo bidimencional que funciona como mano de los jugadores
