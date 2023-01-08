@@ -8,7 +8,7 @@ public class Juego implements LogicaJuego
 	int jugadores=0;
 	//Arreglo bidimencional que funciona como mano de los jugadores
 	//el primer campo hace referencia al jugador y el segundo a
-	//las cartas que tenga en su mano dicho jugador.
+	//las cartas que tenga en su mano dicho jugador.P
 	int mano[][] = new int[4][6];
 	//Arreglo que hace referencia a la carta que tendra libre el jugador 
 	//o la carta que se usara para poder hacer el cambio de cartas.
@@ -187,13 +187,14 @@ public class Juego implements LogicaJuego
 	//la mano del jugador y volverla a agregar al maso.
 	//Esta funcion recibe como parametros el jugador
 	//que va a quitar la carta y la posicion de dicha carta
+	
 	public void quitarCarta(int jugador, int posicion){
 		//Indicamos que la carta libre esta en la posicion que se envio
 		cartaLibre[jugador][0]= posicion-1;
 		//Agregamos el valor de dicha posicion de la mano del jugador
 		//al maso para que vuleva a estar en juego la carta
-		maso.agregar(mano[jugador][posicion-1]);
-	}
+		maso.agregar(mano[jugador][posicion-1]);}
 	
 }
+	
 

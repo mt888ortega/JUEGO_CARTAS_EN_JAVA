@@ -1,10 +1,12 @@
 import java.lang.ArrayIndexOutOfBoundsException;
 import java.util.InputMismatchException;
+import java.lang.NullPointerException;
 import java.util.Scanner;
+
 public class Servidor 
 {
     //Funcion main :D
-	public static void main(String[] args) throws ArrayIndexOutOfBoundsException, InputMismatchException
+	public static void main(String[] args) throws ArrayIndexOutOfBoundsException, InputMismatchException, java.lang.NullPointerException
     {
 		//Creamos las variables y objetos que necesitaremos para llevar el control del juego
 		//op es usada para asignarle valores por teclado
@@ -41,11 +43,11 @@ public class Servidor
             	//Le asignamos a turno el valor de 0 lo cual indica que el primer jugador es el que va a iniciar
             	turno = 0;
             	//se repite los turnos por cada jugador que hay en el juego
-            	while(turno < p.jugadores){
+            	while(turno < p.jugadores) {
             		//Indicamos cual jugador lleva el turno
             		System.out.println("\n\n\t✭TURNO DEL JUGADOR "+(turno+1)+"✭\n\n");
             		//Le entregamos una carta al jugador
-            		p.darCarta(turno);
+            		p.darCarta(turno); 
             		//Le mostramos al jugador su mano
             		p.mostrarMano(turno);
             		//Verificamos que el jugador haya ganado con los valores de sus cartas
@@ -67,22 +69,24 @@ public class Servidor
 				while(op <= 0 || op > 6){
 					System.out.print("\n¿CUAL CARTA QUIERES QUITAR? ➤");
 					op = in.nextInt();}
+				//Llamamos a la funcion quitar carta y le paso como parametros
+            	//los valores del jugador que tiene el mando y la posicion 
+            	//De la carta que quiere quitar
+				p.quitarCarta(turno,op);
+			
+			//Incrementamos en 1 el turno para que siga el jugador siguiente.
+			turno ++;
 				} 
 			catch (ArrayIndexOutOfBoundsException e) {
 				System.out.println("¡INGRESATE UN PARAMETRO INVALIDO!");
 				}
 			catch (InputMismatchException e) {
-					System.out.println("¡INGRESATE UN PARAMETRO INVALIDO!");
-				}
-			}
-            	//Llamamos a la funcion quitar carta y le paso como parametros
-            	//los valores del jugador que tiene el mando y la posicion 
-            	//De la carta que quiere quitar
-            			p.quitarCarta(turno,op);
-            		}
-            		//Incrementamos en 1 el turno para que siga el jugador siguiente.
-            		turno ++;
+				System.out.println("¡INGRESATE UN PARAMETRO INVALIDO!");
+				}	
+			catch (NullPointerException e) {
+				System.out.println("¡INGRESATE UN PARAMETRO INVALIDO!");
+				}	
             }
         }
-    }
-}
+    }	
+}}}
