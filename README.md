@@ -17,3 +17,21 @@ EJEMPLO:
         ::::::::::::::::::
         EL JUGADOR 2 GANÓ.
         ::::::::::::::::::
+
+OTRA MANERA DE GANAR ES SI UN JUGADOR CONSIGUE 2 TRIOS DE DIFERENTE VALOR.
+
+EJEMPLO:
+
+✭TURNO DEL JUGADOR 2✭
+
+
+1-TREVOLES ♣ ➤ 6
+2-CORAZONES ♥ ➤ 6
+3-TREVOLES ♣ ➤ Rey
+4-CORAZONES ♥ ➤ Rey
+5-DIAMANTES ♦ ➤ 6
+6-DIAMANTES ♦ ➤ Rey
+
+        ::::::::::::::::::
+        EL JUGADOR 2 GANÓ.
+        ::::::::::::::::::

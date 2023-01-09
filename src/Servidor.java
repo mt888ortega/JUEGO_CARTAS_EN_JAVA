@@ -53,7 +53,7 @@ public class Servidor
             		//Verificamos que el jugador haya ganado con los valores de sus cartas
             		if (p.gano(turno)) {
             			//En caso de que el jugador gane lo mostramos en pantalla
-            			System.out.println("\t::::::::::::::::::\n\tEL JUGADOR "+(turno+1)+" GANÓ.\n\t::::::::::::::::::");
+            			System.out.println("\n\t::::::::::::::::::\n\tEL JUGADOR "+(turno+1)+" GANÓ.\n\t::::::::::::::::::\n");
             			//Termina el juego
             			System.exit(0);
             		}else{
