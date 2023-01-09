@@ -1,18 +1,19 @@
-## Getting Started
+JUEGO DE CARTAS SIMPLE EN JAVA APLICANO POO.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+EL GANADOR SERA EL PRIMER JUGADOR QUE CONSIGA 3 PAREJAS DE DISTINTO RANGO (SIN IMPORTAR EL PALO) EN SUS 6 CARTAS.
 
-## Folder Structure
+EJEMPLO:
 
-The workspace contains two folders by default, where:
+        ✭TURNO DEL JUGADOR 2✭
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1-CORAZONES ♥️ ➤ Rey
+2-TREVOLES ♣️ ➤ Rey
+3-CORAZONES ♥️ ➤ Reina
+4-CORAZONES ♥️ ➤ As
+5-DIAMANTES ♦️ ➤ As
+6-DIAMANTES ♦️ ➤ Reina
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+        ::::::::::::::::::
+        EL JUGADOR 2 GANÓ.
+        ::::::::::::::::::
